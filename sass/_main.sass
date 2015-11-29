@@ -1,2 +1,315 @@
-// Normally mainpage styles
- 
+/* Normally mainpage styles*/
+.layout__col-4 .item__description .content h2
+  margin-bottom: 10px
+  font-family: "turbotabook", Arial, sans-serif
+  font-size: 21px
+  color: #01445a
+  line-height: 1.2
+.fixed
+  position: fixed
+  top: 10px
+  /*здесь указываем отступ сверху
+  z-index: 9999
+  /*устанавливаем блок поверх всех элементов на странице
+
+@media only screen and (max-width: 1024px)
+  .fixed
+    right: 0
+
+/*TAGS
+
+.countries
+  padding: 10px 20px 10px 0
+  margin-bottom: 30px
+  border-right: 6px solid #59cf67
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #f9f9f9))
+  background-image: -webkit-linear-gradient(left, #ffffff, #f9f9f9)
+  background-image: -moz-linear-gradient(left, #ffffff, #f9f9f9)
+  background-image: -o-linear-gradient(left, #ffffff, #f9f9f9)
+  background-image: linear-gradient(left, #ffffff, #f9f9f9)
+  a
+    margin-top: 15px
+    font-family: "turbotabold", Arial, sans-serif
+    font-size: 21px
+    color: #01445a
+    line-height: 1.2
+    display: block
+    &:hover
+      text-decoration: underline
+  .countries__item
+    i, span
+      display: inline-block
+      vertical-align: middle
+    i
+      position: relative
+      margin-right: 30px
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3) inset
+        border-radius: 5px
+    img
+      display: block
+      border-radius: 5px
+    span
+      width: 170px
+
+@media only screen and (max-width: 1290px)
+  .countries .countries__item i
+    margin-right: 15px
+
+@media only screen and (max-width: 1290px)
+  .countries .countries__item span
+    width: 140px
+    font-size: 16px
+
+.i-form-first
+  float: left
+  width: 100%
+  background: url(img/bg.jpg) no-repeat 50% -235px
+  border-radius: 5px
+
+.form-first
+  float: left
+  width: 98%
+  padding: 20px 1%
+  input
+    &[type="text"], &[type="email"], &[type="tel"], &[type="date"]
+      width: 49%
+      height: 23px
+      padding: 0 .5%
+      margin: 0 0 15px
+      border: 1px solid #d5d5d5
+      border-radius: 5px
+      background-color: white
+      box-shadow: inset 0 4px 5px #f0f0f0
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      font-size: 12px
+  p
+    float: left
+    width: 50%
+    text-align: center
+  .line
+    float: left
+    width: 50%
+  .child
+    width: 98% !important
+  input
+    &[type="date"]
+      width: 45%
+    &[type="submit"]
+      width: 49%
+
+@media only screen and (max-width: 1022px)
+  .form-first input[type="submit"]
+    width: 55%
+
+@media only screen and (max-width: 766px)
+  .form-first
+    input[type="submit"], .line, .child
+      width: 99%
+    input
+      &[type="text"], &[type="email"], &[type="tel"], &[type="date"]
+        width: 99%
+    p
+      display: none
+
+.form-first__title
+  position: relative
+  height: 38px
+  padding-left: 20px
+  margin: 20px 20px 20px 0
+  background: #35a9ce
+  font-family: "turbotabook", Arial, sans-serif
+  color: #f9f9f9
+  font-size: 24px
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2)
+  line-height: 38px
+  &:before
+    content: ""
+    position: absolute
+    top: -5px
+    left: 0
+    background: url('img/icons-s58e2586fff.png') 0 -2459px no-repeat
+    width: 6px
+    height: 48px
+  i
+    position: absolute
+    top: 0
+    right: -17px
+    background: url('img/icons-s58e2586fff.png') 0 -2396px no-repeat
+    width: 17px
+    height: 38px
+
+@media only screen and (max-width: 1290px)
+  .form-first__title
+    font-size: 18px
+
+@media only screen and (max-width: 1022px)
+  .form-first__title
+    padding-left: 5px
+    font-size: 15px
+
+@media only screen and (max-width: 766px)
+  .form-first__title
+    border-radius: 0 5px 5px 0
+
+@media only screen and (max-width: 766px)
+  .form-first__title i
+    display: none
+
+.popup__center, #b-send-message, #b-send-message_no
+  z-index: 110
+
+.popup
+  z-index: 100
+
+.links .links__item a
+  z-index: 90
+  > i
+    z-index: 90
+
+.links__online, .themost .themost__in
+  z-index: 90
+
+.popup
+  .popup_desc
+    text-align: center
+    padding: 0 .5em 10px
+  .popup__center
+    background: url(img/popup-bg_top.png) no-repeat 0 0 #edf4f8
+  .popup__in
+    background: url(img/popup-bg_bott.png) no-repeat 0 bottom
+    min-height: 241px
+
+#b-send-message
+  position: fixed
+  top: 0
+  width: 100%
+  line-height: 3em
+  text-align: center
+  background: rgba(24, 56, 69, 0.7)
+  color: deepskyblue
+  font-weight: bold
+  cursor: pointer
+
+#b-send-message_no
+  position: fixed
+  top: 0
+  width: 100%
+  line-height: 3em
+  text-align: center
+  background: rgba(24, 56, 69, 0.7)
+  color: deepskyblue
+  font-weight: bold
+  cursor: pointer
+  color: rgb(255, 92, 0)
+
+/*pagination
+
+.block_pagination .page-numbers
+  li a
+    margin: 0 4px
+    padding: 0 7px
+    height: 22px
+    line-height: 22px
+    display: inline-block
+    text-decoration: none
+    color: #00719c
+    background: #c4efff
+    border: 1px solid #88deff
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    -khtml-border-radius: 3px
+    border-radius: 3px
+    background: -webkit-gradient(linear, left top, left bottom, from(#c4efff), to(#9ee5ff))
+    background: -webkit-linear-gradient(top, #c4efff, #9ee5ff)
+    background: -moz-linear-gradient(top, #c4efff, #9ee5ff)
+    background: -o-linear-gradient(top, #c4efff, #9ee5ff)
+    background: -ms-linear-gradient(top, #c4efff, #9ee5ff)
+    background: linear-gradient(to bottom, #c4efff, #9ee5ff)
+  .current
+    margin: 0 4px
+    padding: 0 7px
+    height: 22px
+    line-height: 22px
+    display: inline-block
+    text-decoration: none
+    border: 1px solid #88deff
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    -khtml-border-radius: 3px
+    border-radius: 3px
+    background: #f8fdff
+    color: #36c8ff
+
+.page-numbers
+  text-align: center
+  li
+    display: inline-block
+
+.stats_scond
+  width: 100%
+  font-family: "turbotabold", Arial, sans-serif
+  font-size: 18px
+  color: #13495f
+  text-align: center
+  p
+    margin: .3em 0
+  strong
+    color: #42c24f
+
+.content p
+  margin: 1em 0
+
+#single
+  .item__img-big img
+    height: 410px
+  .item__img-small img
+    height: 195px
+
+.links .links__vk
+  > i
+    width: 97px
+    height: 68px
+    background: #1483c4
+    margin-top: 10px
+    border: 3px #1aa9d6 solid
+    border-left: 0
+    border-radius: 0 10px 10px 0
+    color: #8ac1e2
+    font: normal 3.5em sans-serif
+    text-align: center
+    padding-top: 12px
+
+@media only screen and (max-width: 1022px)
+  #single
+    .layout__col-1-menu
+      width: 100%
+    .themost
+      width: 250px
+      float: right
+    .links
+      width: 250px
+      float: left
+      margin-top: 17px
+    .social
+      display: none
+    .block_left
+      width: 100%
+  #first .layout__col-3
+    display: none
+  #category
+    .countries
+      border: none
+      a
+        float: left
+        margin-right: 24px
+    .links_right, .politic
+      display: none
