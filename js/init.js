@@ -1,1 +1,1 @@
-head.load("js/lib/jquery.js", "js/common.js");
+head.load("js/lib/jquery-1.10.2.min.js", "js/common.js", "node_modules/bootstrap-datepicker/js/bootstrap-datepicker.js", "node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js");
