@@ -639,6 +639,110 @@
 					</div>
 				</div>
 			</div>
+			<div class="online">
+				<div class="online__in">
+					<div class="online__title"><?php the_title(); ?><i></i></div>
+					<div class="online__title-sub">лучшие предложения по оптимальным ценам за <strong>3 шага</strong></div>
+					<form action="#" id="online-book">
+						<div class="online__layout">
+							<div class="online__col">
+								<div class="online__title-sub">1. Где Вы хотите отдохнуть</div>
+								<div class="field">
+									<div class="field__label">Выберите страну</div>
+									<div class="field__el">
+										<!-- select -->
+										<div class="select">
+											<div class="select__head">
+												<div class="select__value">Москва</div>
+												<span class="select__arr"><i></i></span>
+											</div>
+											<select name="" id="" class="select__el" required>
+												<option value="Москва">Москва</option>
+												<option value="Москва1">Москва1</option>
+												<option value="Москва2">Москва2</option>
+												<option value="Москва3">Москва3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="online__col">
+								<div class="online__title-sub">2. Какая дата Вам будет удобна</div>
+								<div class="field">
+									<div class="field__label">Выберите дату</div>
+									<div class="field__el">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="online__layout">
+							<div class="online__title-sub">3. Оставьте контактные данные, чтобы мы могли связаться с Вами</div>
+							<div class="online__col">
+								<div class="field">
+									<div class="field__label">Ваше имя</div>
+									<div class="field__el">
+										<input type="text" name="" value="" placeholder="Введите имя ..." required>
+									</div>
+								</div><br>
+								<div class="field">
+									<div class="field__label">Ваш телефон</div>
+									<div class="field__el">
+										<input type="tel" name="" value="" placeholder="Введите телефон ..." required>
+									</div>
+								</div>
+							</div>
+							<div class="online__col">
+								<div class="field">
+									<div class="field__label">Выберите страну</div>
+									<div class="field__el">
+										<textarea name="" placeholder="Пожелания в свободном формате" class="field__textarea" rows="5"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="online__foot">
+							<button class="btn" disabled>Получить лучшие предложения</button>
+							<div class="online__help">
+								<a href="#">Руководство по использованию поиска<i></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- first -->
+			<div class="item">
+			<div class="i-form-first">
+				<div class="form-first__title">Раннее бронирование<i></i></div>
+				<form class="form-first" action="#" onsubmit="yaCounter25418180.reachGoal('SENDREQUESTEARLY'); return true;">
+					<p>Куда</p>
+					<p>Когда</p>
+					<span class="line">
+						<input class="child" type="text" name="sity" required placeholder="Страна, город">
+					</span>
+					<span class="line">
+						<input type="date" name="date-before" max="2050-12-31" min="2014-06-15">
+						 &mdash;
+						<input type="date" name="date-after" max="2050-12-31" min="2014-06-15">
+					</span>
+					<p>Ваше имя</p>
+					<p>Телефон для связи</p>
+					<input type="text" name="nom" required placeholder="Введите имя">
+					<input type="tel" name="phone" required placeholder="Укажите телефон">
+					<p>Email</p>
+					<p>&nbsp;</p>
+					<input type="email" name="mail" placeholder="Введите Email">
+					<input type="hidden" name="url" value="<?php echo $_SERVER['REQUEST_URI']; ?>">
+					<input type="submit" class="btn" name="send" value="Получить предложения для брони">
+				</form>
+			</div>
+			<div style="clear: both;"></div>
+			<div class="item__description">
+				<div class="content">
+					Читать продолжение
+				</div>
+			</div>
+			</div>
 			<!-- tours -->
 			<div class="tours">
 				<div class="tours__title">Горящие туры<i></i></div>
@@ -783,5 +887,6 @@
 	</div>
 </div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" media="screen" title="bootstrap-datepicker" charset="utf-8">
 </body>
 </html>

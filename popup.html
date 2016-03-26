@@ -458,7 +458,16 @@
 					</span>
 				</label>
 				<div class="popup__btn">
-					<button class="btn">Отправить</button>
+					<table class="popup__table">
+						<tr>
+							<td>
+								<button onclick="javascript:hideElement('form-hotel_<?php echo $i; ?>');" class="btn btn_grey btn_small">Мне не интересно</button>
+							</td>
+							<td>
+								<button type="submit" name="send" class="btn btn_big">Получить подробности</button>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>

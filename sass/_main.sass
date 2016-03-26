@@ -70,7 +70,7 @@
 .i-form-first
   float: left
   width: 100%
-  background: url(img/bg.jpg) no-repeat 50% -235px
+  background: url(../img/bg.jpg) no-repeat 50% -235px
   border-radius: 5px
 
 .form-first
@@ -136,16 +136,18 @@
     position: absolute
     top: -5px
     left: 0
-    background: url('img/icons-s58e2586fff.png') 0 -2459px no-repeat
+    +s(choice-title-left)
     width: 6px
     height: 48px
   i
     position: absolute
     top: 0
     right: -17px
-    background: url('img/icons-s58e2586fff.png') 0 -2396px no-repeat
+    +s(choice-title-right)
     width: 17px
     height: 38px
+    +rt(766)
+      display: none
 
 @media only screen and (max-width: 1290px)
   .form-first__title
@@ -183,10 +185,20 @@
     text-align: center
     padding: 0 .5em 10px
   .popup__center
-    background: url(img/popup-bg_top.png) no-repeat 0 0 #edf4f8
+    background: url(../img/popup-bg_top.png) no-repeat 0 0 #edf4f8
   .popup__in
-    background: url(img/popup-bg_bott.png) no-repeat 0 bottom
+    background: url(../img/popup-bg_bott.png) no-repeat 0 bottom
     min-height: 241px
+  .popup__form
+    width: 350px
+    +rt(1022)
+      width: 300px
+  .popup__table
+    td
+      +rt(1022)
+        display: block
+        padding-bottom: 10px
+        text-align: center
 
 #b-send-message
   position: fixed
@@ -313,3 +325,6 @@
         margin-right: 24px
     .links_right, .politic
       display: none
+.datepicker
+  .datepicker-title, .day, .datepicker-switch, .prev, .next
+    vertical-align: middle
